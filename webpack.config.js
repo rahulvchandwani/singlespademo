@@ -32,7 +32,7 @@ module.exports = {
         loader: 'html-loader',
       },
       {
-        test: /\/tsx?$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/
       }
@@ -40,7 +40,7 @@ module.exports = {
   },
   resolve: {
     modules: [path.resolve(__dirname, 'node_modules')],
-    extensions: ['.js', '.ts', '.tsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   plugins: [
     // A webpack plugin to remove/clean the output folder before building

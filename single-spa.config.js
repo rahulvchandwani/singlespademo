@@ -9,6 +9,6 @@ singleSpa.registerApplication("react", () => import("./src/react/react.app.js"),
 
 singleSpa.registerApplication("angular", () => import("./src/angular/angular.app.js"), () => true);
 
-// singleSpa.registerApplication("angular11", () => import("./src/angular11/angular11.app.ts"), () => true);
+singleSpa.registerApplication("angular11", () => import("./src/angular11/angular11.app.ts"), () => true);
 
 singleSpa.start();
